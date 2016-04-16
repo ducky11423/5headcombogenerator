@@ -1,0 +1,15 @@
+div#content{
+    padding: 2px 20px;
+}
+
+h1{
+    margin: 5px;
+}
+
+div.page-header{
+    margin: 20px 0;
+}
+
+div#text{
+    margin: 20px 0;
+}
