@@ -2,8 +2,17 @@ var names=["Shenanigans", "Stigin", "Cheese", "Mat", "The Duckmiester", "Gmate",
 var nouns=["Jew", "Social Justice Warrior", "twat", "faggot", "furry", "shit stain", "fuckass", "cunt", "power hungry whore", "sick cunt", "12 year old", "fucktard", "lad", "bag of dicks", "legit hacker", "rep whore", "wang", "wanker"];
 var adjectives=["queer", "butthurt", "annoying", "inbred", "gay", "salty", "fucked", "weird", "getting banned", "literally worse than hitler", "3phie reincarnated"];
 var likes=["butt sex", "anal", "sucking up to the higher ups", "sucking Stigin off", "winding all the 12 year olds up"];
+
 function PickCombination(){
-    var name = names[Math.floor(Math.random()*names.length)]
+    PickCombination("")
+}
+
+function PickCombination(name){
+   
+    if (name == null) {
+        name = names[Math.floor(Math.random()*names.length)]
+    } 
+ 
     var deteminer = ""
     var word = " "
     
