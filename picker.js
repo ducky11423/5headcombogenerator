@@ -37,3 +37,13 @@ function PickCombination(name){
     display = document.getElementById("combination");
     display.innerHTML = name + deteminer + word + "!";
 }
+
+function PopulateList(){
+    var html = ""
+    
+    for (i = 0; i < names.length; i++) {
+        html = html + '<button type="button" class="btn btn-default" id="pick" onclick="PickCombination(\'' + names[i] + '\')">' + names[i] + '</button>'
+    }
+    
+    document.getElementById("ButtonList").innerHTML = html
+}
